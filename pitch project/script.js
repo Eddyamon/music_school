@@ -16,3 +16,26 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+function showCourse(courseId) {
+    // Hide all course sections
+    document.querySelectorAll('.course-section').forEach(section => {
+        section.classList.add('hidden');
+    });
+
+    // Show the selected course section
+    document.getElementById(courseId).classList.remove('hidden');
+    
+    // Optionally, scroll to the section
+    document.getElementById(courseId).scrollIntoView({ behavior: 'smooth' });
+}
+
+function backToCourses() {
+    // Hide all course sections
+    document.querySelectorAll('.course-section').forEach(section => {
+        section.classList.add('hidden');
+    });
+
+    // Optionally, scroll back to the courses section
+    document.getElementById('courses').scrollIntoView({ behavior: 'smooth' });
+}

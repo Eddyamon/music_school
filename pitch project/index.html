@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music School</title>
+    
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
@@ -40,27 +41,40 @@
         </div>
     </section>
 
-    <!-- Courses Section -->
-    <section id="courses">
-        <div class="container">
-            <h2>Our Courses</h2>
-            <div class="course">
-                <img src="images/piano.jpg" alt="Piano Lessons">
-                <h3>Piano Lessons</h3>
-                <p>Learn to play piano with our experienced instructors.</p>
-            </div>
-            <div class="course">
-                <img src="images/guitar.jpg" alt="Guitar Lessons">
-                <h3>Guitar Lessons</h3>
-                <p>Master the guitar with our comprehensive lessons.</p>
-            </div>
-            <div class="course">
-                <img src="images/violin.jpg" alt="Violin Lessons">
-                <h3>Violin Lessons</h3>
-                <p>Discover the beauty of the violin with our expert tutors.</p>
+  
+<!-- Our Courses Section -->
+<section id="courses" class="our-courses">
+    <div class="container">
+        <h2>Our Courses</h2>
+        <div class="course" onmouseover="showHoverOptions(this)" onmouseout="hideHoverOptions(this)">
+            <img src="images/piano.jpg" alt="Piano Lessons">
+            <h3>Piano Lessons</h3>
+            <p>Learn to play piano with our experienced instructors.</p>
+            <div class="hover-options">
+                <button onclick="window.location.href='explore-course.html#piano'">Explore Course</button>
             </div>
         </div>
-    </section>
+        <div class="course" onmouseover="showHoverOptions(this)" onmouseout="hideHoverOptions(this)">
+            <img src="images/guitar.jpg" alt="Guitar Lessons">
+            <h3>Guitar Lessons</h3>
+            <p>Master the guitar with our comprehensive lessons.</p>
+            <div class="hover-options">
+                <button onclick="window.location.href='explore-course.html#guitar'">Explore Course</button>
+            </div>
+        </div>
+        <div class="course" onmouseover="showHoverOptions(this)" onmouseout="hideHoverOptions(this)">
+            <img src="images/violin.jpg" alt="Violin Lessons">
+            <h3>Violin Lessons</h3>
+            <p>Discover the beauty of the violin with our expert tutors.</p>
+            <div class="hover-options">
+                <button onclick="window.location.href='explore-course.html#violin'">Explore Course</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    
 
     <!-- About Us Section -->
     <section id="about">
